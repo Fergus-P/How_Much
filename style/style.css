@@ -1,0 +1,82 @@
+body{
+  font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    background-color: lightgray;
+  }
+input{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    }
+
+  h3{
+    font-family: 'Mulish', sans-serif;
+  }
+.c1{
+  display: block;
+	cursor: pointer;
+	position: relative;
+  left: 0px;
+	margin: 0 0 0 0;
+	padding: .5em .5em .5em .7em;
+	font-size: 100%;
+	border-top: 0;
+	overflow: auto;
+  background-color: #4059ad;
+  color:#eff2f1;
+}
+.c2{
+  display: block;
+	cursor: pointer;
+	position: relative;
+  left: 0px;
+	margin: 0 0 0 0;
+	padding: .5em .5em .5em .7em;
+	font-size: 100%;
+	border-top: 0;
+	overflow: auto;
+  background-color:#6b9ac4;
+  color:#eff2f1;
+}
+
+.c3{
+  display: block;
+	cursor: pointer;
+	position: relative;
+  left: 0px;
+	margin: 0 0 0 0;
+	padding: .5em .5em .5em .7em;
+	font-size: 100%;
+	border-top: 0;
+	overflow: auto;
+  background-color:#97d8c4;
+}
+.c4{
+  display: block;
+	cursor: pointer;
+	position: relative;
+  left: 0px;
+	margin: 0 0 0 0;
+	padding: .5em .5em .5em .7em;
+	font-size: 100%;
+	border-top: 0;
+	overflow: auto;
+  background-color:#eff2f1;
+}
+.c5{
+  display: block;
+	cursor: pointer;
+	position: relative;
+  left: 0px;
+	margin: 0 0 0 0;
+	padding: .5em .5em .5em .7em;
+	font-size: 100%;
+	border-top: 0;
+	overflow: auto;
+  background-color:#F4B942;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+	font-size:18px ;
+}

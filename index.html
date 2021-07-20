@@ -1,9 +1,69 @@
-<!DOCTYPE html>
 <html>
-<body>
+    <body>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Mulish:wght@200;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/script.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- <link href="jquery-ui.css" rel="stylesheet"> -->
+        <script>
+            $( function() {
+              $( "#accordion" ).accordion();
+              heightStyle: "content"
+            } );
+            </script>
+    </head>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <div id="accordion" style='position:absolute;left:0px; top:0px; width:100%;'> 
+    
+        <h3 class="c1">HOW MUCH TIME DOES IT COST YOU?</h3>
+      
+        <div class="c1">
+          <p>
+          How much does an item cost you in time? Because we all know <i>Time is Money!</i>
+          </p>
+        </div>
+        
+    
+        <h3 class="c2">MONTHLY TAKE HOME</h3>
+        <div class="c2">
+          <p>
+            What is you monthly take home pay?: 
+            <br><input type="number" id="mthp" value=2500><br>
+          </p>
+        </div>
+        <h3 class="c3">WORKING HOURS</h3>
+        <div class="c3">
+          <p>
+            How many hours a week do you work?:
+            <input id="hpw" type="number" value=45><br>
+          </p>
+        </div>
+        <h3 class="c4">ITEM COST</h3>
+        <div class="c4">
+          <p>
+            What is the cost of the item?:
+            <input type="number" id="cost" value=45><br><br>
+          </p>
+         
+        </div>
+        <h3 class="c5">RESULTS</h3>
+        <div class="c5">
+          <p>
+            How much does it cost you? <br>
 
-</body>
+            <button onclick="cost_in_hours()">Try it</button>
+            <div id="pph"></div>
+            <div id="timeCost"><br><br></div>
+          </p>
+        </div>
+      </div>
+
+    </body>
 </html>
