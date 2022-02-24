@@ -9,61 +9,68 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Mulish:wght@200;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style/style.css">
         <script src="script/script.js"></script>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <!-- <link href="jquery-ui.css" rel="stylesheet"> -->
-        <script>
-            $( function() {
-              $( "#accordion" ).accordion();
-              heightStyle: "content"
-            } );
-            </script>
+        
+
     </head>
 
-    <div id="accordion" style='position:absolute;left:0px; top:0px; width:100%;'> 
-    
-        <h3 class="c1">HOW MUCH TIME DOES IT COST YOU?</h3>
-      
-        <div class="c1">
-          <p>
+       <!--  <h3>HOW MUCH TIME DOES IT COST YOU?</h3>
+
           How much does an item cost you in time? Because we all know <i>Time is Money!</i>
-          </p>
-        </div>
-        
-    
-        <h3 class="c2">MONTHLY TAKE HOME</h3>
-        <div class="c2">
-          <p>
+         
+        <h3>MONTHLY TAKE HOME</h3>
             What is you monthly take home pay?: 
             <br><input type="number" id="mthp" value=2500><br>
-          </p>
-        </div>
-        <h3 class="c3">WORKING HOURS</h3>
-        <div class="c3">
-          <p>
+        
+        <h3>WORKING HOURS</h3>
             How many hours a week do you work?:
             <input id="hpw" type="number" value=45><br>
-          </p>
-        </div>
-        <h3 class="c4">ITEM COST</h3>
-        <div class="c4">
-          <p>
+    
+        <h3>ITEM COST</h3>
             What is the cost of the item?:
             <input type="number" id="cost" value=45><br><br>
-          </p>
-         
-        </div>
-        <h3 class="c5">RESULTS</h3>
-        <div class="c5">
-          <p>
-            How much does it cost you? <br>
+        
+        <h3>RESULTS</h3>
+            How much does it cost you?<br>
 
-            <button onclick="cost_in_hours()">Try it</button>
+            <button onclick="cost_in_time()">Calculate the Cost 💰</button>
             <div id="pph"></div>
-            <div id="timeCost"><br><br></div>
-          </p>
-        </div>
-      </div>
+            <div id="timeCost"><br><br></div> -->
+         
+     
+            <div class="form">
+              <div class="title">Time Calculator ⏱💰</div>
+              <div class="subtitle">How much does this cost you?</div>
 
+
+              <div class="input-container ic1">
+                <input id="mthp" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label class="placeholder">Monthly take home?</label>
+              </div>
+
+
+              <div class="input-container ic1">
+                <input id="hpw" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label class="placeholder">Hours per week?</label>
+              </div>
+
+              <div class="input-container ic1">
+                <input id="cost" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label class="placeholder">Cost of the item?</label>
+              </div>
+              <button onclick="cost_in_time()" type="text" class="submit" id="opener">Calculate the Cost 💰</button>
+              <br>
+                
+                  <p id="result">
+                    <div class="subtitle" id="pph"></div>
+                    <div class="subtitle" id="timeCost"><br><br>
+                  </p>
+                
+              
+                
+            </div>
     </body>
+
 </html>
